@@ -1,0 +1,54 @@
+.imgContainer {
+    width: 60%;
+    height: 60%;
+    padding: 35px;
+}
+.boxShadowGrid{
+    display:grid;
+    grid-template-columns: repeat(6,100px);
+    gap: 8rem;
+}
+.inputsGrid{
+    display:grid;
+    grid-template-columns: repeat(16,100px);
+    gap: 2rem;
+}
+
+.inputsGrid::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.inputsGrid::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+/* Handle */
+.inputsGrid::-webkit-scrollbar-thumb {
+    background: rgb(192, 10, 192);
+    border-radius: 7px;
+}
+
+.boxShadowGrid::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.boxShadowGrid::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+/* Handle */
+.boxShadowGrid::-webkit-scrollbar-thumb {
+    background: rgb(192, 10, 192);
+    border-radius: 7px;
+}
+
+@media screen and (min-width: 300px) and (max-width:700px){
+    .imgContainer {
+        width: 100%;
+        height:100%;
+    }
+}
