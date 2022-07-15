@@ -13,7 +13,7 @@ import Collage7 from './collages/Collage7'
 import Collage8 from './collages/Collage8'
 import Collage9 from './collages/Collage9'
 import Collage10 from './collages/Collage10'
-import Boxshadow from './Boxshadow'
+// import Boxshadow from './Boxshadow'
 
 
 function Navbar() {
@@ -45,21 +45,21 @@ function Navbar() {
                         id="example-navbar-danger"
                     >
                         <ul className="flex flex-col -mx-4 lg:flex-row list-none lg:ml-auto">
-                            <li className="">
-                                <div className={`mt-2 px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75`}>
+                        <li className="nav-item">
+                                <p className={` mt-2 px-3 py-2.5 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75`}>
                                     <NavLink to="/" onClick={() => setNavbarOpen(!navbarOpen)}>Home</NavLink>
-                                </div>
+                                </p>
                             </li>
                             <li className="nav-item">
                                 <p className={` mt-2 px-3 py-2.5 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75`}>
                                     <NavLink to="/collage" onClick={() => setNavbarOpen(!navbarOpen)}>Collage</NavLink>
                                 </p>
                             </li>
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <p className={` mt-2 px-3 py-2.5 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75`}>
                                     <NavLink to="/imageshadow" onClick={() => setNavbarOpen(!navbarOpen)}>Image Shadow</NavLink>
                                 </p>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                 </div>
@@ -76,7 +76,7 @@ function Navbar() {
                 <Route exact path="/collage8" element={<Collage8 />} />
                 <Route exact path="/collage9" element={<Collage9 />} />
                 <Route exact path="/collage10" element={<Collage10 />} />
-                <Route exact path="/imageshadow" element={<Boxshadow />} />
+                {/* <Route exact path="/imageshadow" element={<Boxshadow />} /> */}
             </Routes>
         </div>
     )

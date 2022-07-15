@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react'
 import { toPng } from 'html-to-image';
-import {NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './index.css'
 
 function Boxshadow() {
@@ -129,8 +129,10 @@ function Boxshadow() {
                 <input type="file" onChange={onImageChange} />
             </div>
             <div className="grid grid-cols-1 md:justify-content-center mx-3">
-                <div className="justify-self-center imgContainer" ref={ref}>
-                    <img src={img} alt="Example" style={styles} />
+                <div className="justify-self-center imgContainer"  ref={ref}>
+                    <div className="p-20">
+                        <img src={img} alt="Example" className="shadow-xl" />
+                    </div>
                 </div>
 
                 <div className="space-x-5 my-3 h-48 overflow-auto boxShadowGrid">
